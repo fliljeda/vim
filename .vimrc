@@ -1,24 +1,26 @@
 " A vimrc configuration by Fredrik Liljedahl
 
-
-
-" ENVIRONMENT {
-    " better safe than sorry
-    set nocompatible
-
-    set t_Co=256
-
-    " Set the colorscheme
-    "colorscheme solarized
-
-    " Assume a dark background
-    set background=dark
-" }/ENVIRONMENT
+" better safe than sorry, has to be first
+set nocompatible
 
 " PATHOGEN {
     execute pathogen#infect()
     call pathogen#helptags()
 " }\PATHOGEN
+
+" ENVIRONMENT {
+    set t_Co=16
+    syntax on
+
+    " Assume a dark background
+    set background=dark
+
+    "let g:solarized_termcolors=256
+
+    " Set the colorscheme
+    colorscheme babymate256
+    "colorscheme solarized "needs solarized colorpalette in terminal to work properly
+" }/ENVIRONMENT
 
 " SYNTASTIC {
     set statusline+=%#warningmsg#
