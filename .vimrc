@@ -61,11 +61,15 @@ set nocompatible
     " Highlights the cursor line
     set cursorline
 
-    " Redeaw only when we need to
+    " Redraw only when we need to
     set lazyredraw
 
     " Gives graphical menu when tabbing through :e etc.
     set wildmenu
+
+    " Sets the length of keycode or macro sequences, (changed it because it
+    " waits X milliseconds for 'O' command after I escape
+    set ttimeoutlen=100
 " }\GENERAL
 
 " FORMATTING{
@@ -117,4 +121,9 @@ set nocompatible
 
     " Yank from cursor to end of line
     nnoremap Y y$
+    
+    " Move cursor 20 characters left and right resp. Via Ctrl-l or Ctrl-r
+    map <C-L> 20zl 
+    map <C-H> 20zh 
+
 " }\MAPPINGS
