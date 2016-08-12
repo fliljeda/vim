@@ -46,7 +46,8 @@ set nocompatible
     " Set line number
     "set number
 
-    " Lets you put cursor at last character of line + 1
+    " onemore = Lets you put cursor at last character of line + 1
+    " all = lets you place cursor anywhere you want
     set virtualedit=onemore
 
     " Allows backspaces over items
