@@ -12,6 +12,9 @@ set nocompatible
     set t_Co=16
     syntax on
 
+    " Lets you copy and paste directly to clipboard
+    set clipboard=unnamedplus
+
     " Assume a dark background
     set background=dark
 
@@ -21,6 +24,11 @@ set nocompatible
     colorscheme babymate256
     "colorscheme solarized "needs solarized colorpalette in terminal to work properly
 " }/ENVIRONMENT
+
+" VIM-MARKDOWN {
+    " Disable folding by default
+    let g:vim_markdown_folding_disabled = 1
+" )\VIM-MARKDOWN
 
 " SYNTASTIC {
     set statusline+=%#warningmsg#
