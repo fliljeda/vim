@@ -13,6 +13,7 @@ set nocompatible
     syntax on
 
     " Lets you copy and paste directly to clipboard
+    set clipboard=unnamed
     set clipboard=unnamedplus
 
     " Assume a dark background
@@ -39,6 +40,10 @@ set nocompatible
     let g:syntastic_auto_loc_list = 1
     let g:syntastic_check_on_open = 1
     let g:syntastic_check_on_wq = 0
+
+    ""C++
+    let g:syntastic_cpp_compiler = 'clang++'
+    let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
 " }\SYNTASTIC
 
 " GENERAL {
@@ -52,7 +57,7 @@ set nocompatible
     set mouse=a
 
     " Set line number
-    "set number
+    set number
 
     " onemore = Lets you put cursor at last character of line + 1
     " all = lets you place cursor anywhere you want
